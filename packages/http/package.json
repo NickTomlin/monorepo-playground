@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava"
   },
   "keywords": [],
   "author": "",
@@ -19,5 +19,15 @@
   "description": "",
   "dependencies": {
     "undici": "^5.0.0"
+  },
+  "ava": {
+    "extensions": ["ts"],
+    "nodeArguments": [
+      "--loader=ts-node/register"
+    ]
+  },
+  "devDependencies": {
+    "ava": "^4.1.0",
+    "ts-node": "^10.7.0"
   }
 }
