@@ -1,5 +1,9 @@
 {
-  "name": "monorepo-playground",
+  "name": "@nicktomlin/monorepo-playground",
+  "private": true,
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "version": "1.0.0",
   "description": "Playing around with npm workspaces + github actions",
   "main": "index.js",
@@ -17,12 +21,14 @@
     "url": "https://github.com/NickTomlin/monorepo-playground/issues"
   },
   "homepage": "https://github.com/NickTomlin/monorepo-playground#readme",
-  "dependencies": {
-    "@changesets/cli": "^2.22.0"
-  },
   "workspaces": [
     "packages/http",
     "packages/cli",
     "packages/task-client"
-  ]
+  ],
+  "devDependencies": {
+    "@changesets/cli": "^2.22.0",
+    "tsup": "^5.12.4",
+    "typescript": "^4.6.3"
+  }
 }

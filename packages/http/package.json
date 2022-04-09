@@ -8,7 +8,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NickTomlin/monorepo-playground.git"
@@ -17,5 +16,8 @@
     "url": "https://github.com/NickTomlin/monorepo-playground/issues"
   },
   "homepage": "https://github.com/NickTomlin/monorepo-playground#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "undici": "^5.0.0"
+  }
 }
