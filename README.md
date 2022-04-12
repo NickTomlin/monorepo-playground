@@ -5,7 +5,7 @@ Playing around with npm workspaces + github actions to build out a toy project.
 
 ## Goals
 
-This repo exposes a multi-package project
+This repo exposes a multi-package project that hopefully encompases a typical OSS project with `n` packages
 
 ```
 - packages
@@ -16,10 +16,6 @@ This repo exposes a multi-package project
   * [maybe more]...
 ```
 
-This should model a relatively common pattern for an open source project.
+## Working
 
-Prior art
----
-
-- https://devsday.ru/blog/details/43682
-- https://github.com/Quramy/npm-ts-workspaces-example
+See [CONTRIBUTING](./CONTRIBUTING.md)

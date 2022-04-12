@@ -2,13 +2,14 @@
   "name": "@nicktomlin/monorepo-playground",
   "private": true,
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=16.0.0",
+    "npm": ">=8.5.0"
   },
   "version": "1.0.0",
   "description": "Playing around with npm workspaces + github actions",
   "main": "index.js",
   "scripts": {
-    "test": "npm test --workspaces"
+    "test": "npm run test --workspaces"
   },
   "repository": {
     "type": "git",
