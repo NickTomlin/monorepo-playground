@@ -4,7 +4,7 @@ import test from 'ava'
 
 function setup () {
   const mockAgent = new MockAgent()
-  const mockPool = mockAgent.get('https://httbin.org')
+  const mockPool = mockAgent.get('https://httpbin.org')
   setGlobalDispatcher(mockAgent)
   mockAgent.disableNetConnect()
   return { mockPool }
