@@ -1,9 +1,11 @@
 {
   "name": "@nicktomlin/mono-http",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "build": "tsup src/index.ts --dts"
   },
   "keywords": [],
   "author": "",
@@ -21,13 +23,16 @@
     "undici": "^5.0.0"
   },
   "ava": {
-    "extensions": ["ts"],
+    "extensions": [
+      "ts"
+    ],
     "nodeArguments": [
       "--loader=ts-node/register"
     ]
   },
   "devDependencies": {
     "ava": "^4.1.0",
-    "ts-node": "^10.7.0"
+    "ts-node": "^10.7.0",
+    "tsup": "^5.12.4"
   }
 }

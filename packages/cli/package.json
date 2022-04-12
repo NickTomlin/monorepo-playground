@@ -1,19 +1,25 @@
 {
   "name": "@nicktomlin/mono-cli",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "build": "tsup src/bin/index.ts src/index.ts --dts"
   },
+  "bin": "./dist/bin/index.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "ava": "^4.1.0",
+    "tsup": "^5.12.4",
     "ts-node": "^10.7.0"
   },
   "ava": {
-    "extensions": ["ts"],
+    "extensions": [
+      "ts"
+    ],
     "nodeArguments": [
       "--loader=ts-node/register"
     ]

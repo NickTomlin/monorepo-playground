@@ -9,7 +9,9 @@
   "description": "Playing around with npm workspaces + github actions",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test --workspaces"
+    "test": "npm --workspaces run test",
+    "build": "npm --workspaces run build",
+    "release": "changeset publish"
   },
   "repository": {
     "type": "git",

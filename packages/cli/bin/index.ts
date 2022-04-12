@@ -1,5 +1,0 @@
-#!/usr/env node
-
-import {main} from "../src/index"
-
-main(process.argv[2])
