@@ -1,8 +1,8 @@
-import {fetch} from 'undici';
+import {request} from 'undici';
 
 export class Client {
   async run () {
-    const res = await fetch('https://httpbin.org/get')
-    return res.json()
+    const {body} = await request('https://httpbin.org/get')
+    return body.json()
   }
 }
